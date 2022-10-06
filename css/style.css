@@ -1,0 +1,107 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(7, 7, 7, 0.904);
+    display: flex;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.containercalculator{
+    margin-top: 100px;
+}
+
+#calculadora{
+    width: 400px;
+    padding: .5em;
+    background-color: #131212;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 5px rgb(222, 226, 225);
+}
+
+#calculadora h3{
+    font: 0.8em;
+    font-weight: 300;
+    color: rgb(8, 209, 132);
+
+}
+
+#operacoes{
+    text-align: right;
+}
+
+#operacao-anterior{
+    color: #777;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#operacao-atual{
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    color: rgb(8, 209, 132);
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button{
+    color: rgb(8, 209, 132);
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #0f0e0e;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#buttons-container .numero{
+    background-color: #1d1b1b;
+    color: rgb(8, 209, 132);
+    font-weight: 600;
+}
+
+#buttons-container .numero:hover{
+    background-color: #111010;
+    border-color: rgb(8, 209, 132);
+}
+
+#buttons-container #btn-igual{
+    color: #000;
+    grid-column: span 2;
+    background-color: rgb(8, 209, 132);
+}
+
+#buttons-container #btn-igual:hover{
+    background-color: rgb(9, 138, 88);
+}
+
+@media  screen and (max-width: 400px) {
+    #calculadora{
+        width: 300px;
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    #calculadora{
+        width: 250px;
+    }
+}
