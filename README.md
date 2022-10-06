@@ -5,4 +5,4 @@
 <a href=""> https://pedroferreirasousa.github.io/CalculadoraJs/ </a>
 
 ### Tela Calculadora
-<img src="ImgForReadme/print.png">
+<img src="ImgForReadme/Print.png">
